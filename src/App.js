@@ -5,12 +5,11 @@ const App = () => {
   return (
     
        
-        <div>
-             <CarouselControlled />
-            {/* import image */}
-            <img src={require('./test.jpg')} alt="test" />
 
-        </div>
+             <CarouselControlled />
+           
+
+
     
   )
 }

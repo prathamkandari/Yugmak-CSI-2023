@@ -1,20 +1,14 @@
-import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import {render} from 'react-dom';
+import img from '../../test.jpg';
+import './index.css'
 
-function ControlledCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
+function UncontrolledExample() {
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../../test.jpg"
+          src={img}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -25,7 +19,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          src={img}
           alt="Second slide"
         />
 
@@ -52,5 +46,4 @@ function ControlledCarousel() {
   );
 }
 
-export default ControlledCarousel;
-render(<ControlledCarousel />);
+export default UncontrolledExample;
