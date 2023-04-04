@@ -1,11 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import {About, Contact, Eventtimeline, Home} from './Components'
 
 function App() {
   return (
     <div className="App">
-     <div className="container-fluid doubleShade"
-     ></div>
+      <Home />
+     <div className="container-fluid doubleShade">
+      <Eventtimeline/>
+      <About/>
+      <Contact/>
+     </div>
     </div>
   );
 }

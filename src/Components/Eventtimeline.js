@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Eventtimeline() {
+const Eventtimeline = () => {
   return (
-    <div>
-      
-    </div>
+    <div>Eventtimeline</div>
   )
 }
+
+export default Eventtimeline
