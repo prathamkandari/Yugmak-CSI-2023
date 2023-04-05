@@ -1,7 +1,6 @@
 import * as React from 'react';
 import "./style/Eventtimeline.css";
 import EventTimelineItem from './EventTimelineItem';
-import { element } from 'prop-types';
 
 
 export default function Eventtimeline() {

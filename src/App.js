@@ -1,10 +1,11 @@
 import './App.css';
 import {About, Contact, Eventtimeline, Home} from './Components'
 
+
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Home/>
      <div className="container-fluid doubleShade">
       <Eventtimeline/>
       <About/>
