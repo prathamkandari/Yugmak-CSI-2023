@@ -7,9 +7,10 @@ function App() {
     <div className="App">
       <Home/>
      <div className="container-fluid doubleShade">
+     <About/>
       <Eventtimeline/>
-      <About/>
-      <Contact/>
+      
+      {/* <Contact/> */}
      </div>
     </div>
   );

@@ -35,18 +35,31 @@
 #front1{
   left: -10%;
 }
- @media (max-width:849px) {
+ @media (max-width:978px) {
   #text{
-    font-size: 4em;
-    -webkit-transform: scale(1,2);
-  -moz-transform: scale(1,2);
-  -o-transform: scale(1,2);
-  transform: scale(1,2);
+    font-size: 5em;
+    left: 50%;
+    transform: translateX(-50%);
   top: 25%;
-  }
-  .parallax img{
-   width: max-content;
-    transform: scaleX(1);
-    left: -90%;
+  letter-spacing: 6px;
   }
 } 
+.con{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+#mobImg{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /* width: 100%; */
+  height: 100%;
+  z-index: -1;
+}
+@media (max-width:510px) {
+  #mobImg{
+    left:60%
+  }
+}
