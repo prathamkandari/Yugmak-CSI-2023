@@ -1,0 +1,9 @@
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    background-color: rgba(253, 255, 255, 0.548);
+    padding: 4%;
+    border-radius: 10px;
+}
