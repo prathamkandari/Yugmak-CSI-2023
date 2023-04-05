@@ -7,3 +7,14 @@ section{
     padding: 4%;
     border-radius: 10px;
 }
+.bg{
+    padding-left: 7.3%;
+    padding-right: 7.3%;
+}
+.about-us{
+    font-size: large;
+}
+h1{
+    color: yellow;
+    padding-bottom: 7%;
+}
