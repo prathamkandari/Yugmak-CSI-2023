@@ -10,7 +10,7 @@ function App() {
      <About/>
       <Eventtimeline/>
       
-      {/* <Contact/> */}
+      <Contact/>
      </div>
     </div>
   );
