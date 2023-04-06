@@ -1,99 +1,70 @@
-import React, { useRef } from "react";
-import emailjs from "emailjs-com";
-import styled from "styled-components";
+import React from 'react'
+import './style/contact.css'
+import  {FaMapMarker,FaEnvelopeOpen,FaMobileAlt}  from "react-icons/fa";
 
 const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "replace with service id",
-        "replace with template id",
-        form.current,
-        "replace with user id"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   return (
-    <StyledContactForm>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
-    </StyledContactForm>
-  );
-};
+    <div className='csi__contact'>
+      <div className='csi__contact_heading'>
+        <h1>
+          Contact Us
+        </h1>
+      </div>
+      <div className='csi__contact_conatiner'>
+        <div className='csi__contact_conatiner_left'>
+          <div className='csi__contact_container_left-form'>
+            <form>
+              <div className='csi__contact_container_left-form_name'>
+                <input type='text' placeholder='Name' /> 
+              </div>
+              <div className='csi__contact_container_left-form_email'>
+                <input type='email' placeholder='Email' />
+              </div>
+              <div className='csi__contact_container_left-form_message'>
+                <textarea placeholder='Message' />
+              </div>
+              <div className='csi__contact_container_left-form_submit'>
+                <button type='submit'>Submit</button>
+              </div>
 
-export default Contact;
 
-const StyledContactForm = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 400px;
+            </form>
 
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-size: 16px;
+          </div>
 
-    input {
-      width: 100%;
-      height: 35px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
+        </div>
+        <div className='csi__contact_conatiner_right'>
+          <div className='csi__contact_conatiner_right-heading'>
+            <h2>Contact Info</h2>
+          </div>
+          <div className='csi__contact_conatiner_right-info'>
+            <div className='csi__contact_conatiner_right-info_text'>
+              <p>
+              Contact us and we'll get back to you within 24 hours.
+              </p>
+            </div>
+            <div className='csi__contact_conatiner_right-info_address'>
+              <h3>Address</h3>
+              <p><FaMapMarker/> SOCS, Univerity of Petroleum and Energy Studies, Bidholi, Dehradun</p>
+            </div>
+            <div className='csi__contact_conatiner_right-info_email'>
+              <h3>Email</h3>
+              <p><FaEnvelopeOpen/> upes.csi@gmail.com</p>
+            </div>
+            <div className='csi__contact_conatiner_right-info_phone'>
+              <h3>Phone</h3>
+              <p><FaMobileAlt/> Mr.Sparsh Thapa</p>
+              <p> +91 7895700706</p>
+              <p className='csi__contact_conatiner_right-info_phone-ansh'><FaMobileAlt/> Mr.Ansh Gupta</p>
+              <p> +91 9807726997</p>
+            </div>
+          </div>
 
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
+        </div>
+      </div>
+      
+    </div>
+  )
+}
 
-    textarea {
-      max-width: 100%;
-      min-width: 100%;
-      width: 100%;
-      max-height: 100px;
-      min-height: 100px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
-
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
-    }
-
-    label {
-      margin-top: 1rem;
-    }
-
-    input[type="submit"] {
-      margin-top: 2rem;
-      cursor: pointer;
-      background: rgb(249, 105, 14);
-      color: white;
-      border: none;
-    }
-  }
-`;
-
+export default Contact
