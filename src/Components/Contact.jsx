@@ -10,7 +10,7 @@ const Contact = () => {
           Contact Us
         </h1>
       </div>
-      <div className='csi__contact_conatiner'>
+      <div className='csi__contact_conatiner blur_background'>
         <div className='csi__contact_conatiner_left'>
           <div className='csi__contact_container_left-form'>
             <form>
