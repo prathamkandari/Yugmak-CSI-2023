@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import "./style/Eventtimeline.css";
+import fifa from "./img/IMG-20230409-WA0021.avif"
 
 export default function EventTimelineItem(props) {
-    let {BlueTitle,EventDate,BlueTime,BlueContent, RedTitle,RedTime,RedContent,GreenTitle,GreenTime,GreenContent}=props;
+    let {BlueTitle,EventDate,BlueTime,BlueContent, RedTitle,RedTime,RedContent,GreenTitle,GreenTime,GreenContent,RedImg,GreenImg,BlueImg,showGreen,key}=props;
+	{console.log(BlueImg,GreenImg,RedImg)}
   return (
     <div>
       <div className="container blur_background">
     <div className="h1 text-center text-dark" id='subHeading'>{EventDate}</div>
 		<article className="postcard light blue">
-				<img className="postcard__img" src="https://picsum.photos/1000/1000" alt="" />
+				<img className="postcard__img" src={BlueImg} alt="" />
 
 			<div className="postcard__text t-dark">
 				<h1 className="postcard__title blue">{BlueTitle}</h1>
@@ -23,7 +25,7 @@ export default function EventTimelineItem(props) {
 			</div>
 		</article>
 		<article className="postcard light red">
-				<img className="postcard__img" src="https://picsum.photos/501/500" alt="" />	
+				<img className="postcard__img" src={RedImg} alt="" />	
 			<div className="postcard__text t-dark">
 				<h1 className="postcard__title red">{RedTitle}</h1>
 				<div className="postcard__subtitle small">
@@ -36,8 +38,8 @@ export default function EventTimelineItem(props) {
         <div className="container d-flex justify-content-end"><button type="button" className="btn btn-outline-danger">Register</button></div>
 			</div>
 		</article>
-		<article className="postcard light green">
-				<img className="postcard__img" src="https://picsum.photos/500/501" alt="" />
+		<article className="postcard light green" style={{display:showGreen}}>
+				<img className="postcard__img" src={GreenImg} alt="" />
 			<div className="postcard__text t-dark">
 				<h1 className="postcard__title green">{GreenTitle}</h1>
 				<div className="postcard__subtitle small">

@@ -13,6 +13,7 @@ section{
     padding-right: 7.3%;
 }
 .about-us{
+    text-align: justify;
     font-size: x-large;
 }
 @media (max-width:620px) {
