@@ -18,18 +18,18 @@ export default function Eventtimeline() {
     "titleBlue":"Lost Treasures",
     "timeBlue":"Thu, April 13th 2023",
     "key":1,
-    "imgBlue":{Treasure},
+    "imgBlue":Treasure,
      "contentBlue":"Do you have what it takes to crack the clues in this roller coaster of unraveling clues hidden all across the campus??",
     "titleRed":"COMIC CHAOS",
-    "imgRed":{Comic},
+    "imgRed":Comic,
     "showGreen":"none",
     "timeRed":"Thu, April 13th 2023",
      "contentRed":"Are you looking for some amusing and creative inspiration? Look no further as UPES-CSI invites you to the Comic Chaos Wacky Caricature Challenge!",
   },{
     "eventDate":"14 April",
-    "imgRed":{Clickathon},
-    "imgGreen":{Human},
-    "imgBlue":{fifa},
+    "imgRed":Clickathon,
+    "imgGreen":Human,
+    "imgBlue":fifa,
     "key":2,
     "titleBlue":"FIFA-23",
     "timeBlue":"Fri, April 14th 2023",
@@ -43,20 +43,20 @@ export default function Eventtimeline() {
      "contentGreen":"Gather your squad and all foosball fans for a thrilling game of Human-Foosball. With restricted moves, show up your skills and win. c",
   },{
     "eventDate":"15 April",
-    "imgRed":{Code},
-    "imgGreen":{Capitalist},
+    "imgRed":Code,
+    "imgGreen":Capitalist,
     "key":3,
-    "imgBlue":{Art},
+    "imgBlue":Art,
     "titleBlue":"Art Across Time",
     "timeBlue":"Sat, April 15th 2023",
-     "contentBlue":'Get ready to travel across the world with our upcoming UPES-CSI event, "Art Across Time". This fun event will take you on a journey to a famous place across the globe, where you will be able to use your creativity to create a past or future version of it. ',
+     "contentBlue":'Get ready to travel across the world with our upcoming UPES-CSI event, "Art Across Time". ',
     "titleRed":"Code Adventures",
     "timeRed":"Sat, April 15th 2023",
-     "contentRed":"It’s time to put that to the test with our event-Code Adventures, divided into three rounds. UPES-CSI invites students, irrespective of their schools, to participate in this fun yet learning event.",
+     "contentRed":"It’s time to put that to the test with our event-Code Adventures, divided into three rounds.",
     "titleGreen":"Capitalist Bidding Battle",
     "timeGreen":"Sat, April 15th 2023",
     "showGreen":"flex",
-     "contentGreen":"If you’re a fan of monopoly and real estate, we have the event for you. We invite you to come to buy countries, literally and bid for them to earn your position as the winner. Remember, inheriting powerful countries matters, but knowing how to read the clues matters more.",
+     "contentGreen":"If you’re a fan of monopoly and real estate, we have the event for you.We invite you to come to buy countries,literally and bid for them to earn your position as the winner.",
   }])
   return (
     <div>
@@ -68,7 +68,7 @@ export default function Eventtimeline() {
       return     <EventTimelineItem BlueTitle={element.titleBlue} EventDate={element.eventDate} BlueTime={element.timeBlue} BlueContent={element.contentBlue} 
       RedTitle={element.titleRed} RedTime={element.timeRed} RedContent={element.contentRed} 
       GreenTitle={element.titleGreen} GreenTime={element.timeGreen} GreenContent={element.contentGreen} BlueImg={element.imgBlue} RedImg={element.imgRed} GreenImg={element.imgGreen}
-      showGreen={element.showGreen}
+      showGreen={element.showGreen} key={element.key}
       />
     })}
 	</div>

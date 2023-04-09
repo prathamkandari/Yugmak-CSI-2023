@@ -14,7 +14,7 @@ section{
 }
 .about-us{
     text-align: justify;
-    font-size: x-large;
+    font-size: 28px;
 }
 @media (max-width:620px) {
     .about-us{

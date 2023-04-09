@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className='csi__contact'>
       <div className='csi__contact_heading'>
-        <h1>
+        <h1 className='heading'>
           Contact Us
         </h1>
       </div>

@@ -85,7 +85,7 @@ a:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-size: 8px;
+  font-size: 7px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -178,7 +178,7 @@ padding-left: 5rem;
   .postcard .postcard__text {
     padding: 3rem;
     width: 100%;
-    font-size: medium;
+    font-size: large;
   }
   .postcard__text:before {
     content: "";
