@@ -21,7 +21,7 @@ export default function EventTimelineItem(props) {
 				</div>
 				<div className="postcard__bar"></div>
 				<div className="postcard__preview-txt">{BlueContent}</div>
-			  <button type="button" className="btn btn-outline-primary">Register</button>
+			  {/* <button type="button" className="btn btn-outline-primary">Register</button> */}
 			</div>
 		</article>
 		<article className="postcard light red">
@@ -35,7 +35,7 @@ export default function EventTimelineItem(props) {
 				</div>
 				<div className="postcard__bar"></div>
 				<div className="postcard__preview-txt">{RedContent}</div>
-        <div className="container d-flex justify-content-end"><button type="button" className="btn btn-outline-danger">Register</button></div>
+        {/* <div className="container d-flex justify-content-end"><button type="button" className="btn btn-outline-danger">Register</button></div> */}
 			</div>
 		</article>
 		<article className="postcard light green" style={{display:showGreen}}>
@@ -49,7 +49,7 @@ export default function EventTimelineItem(props) {
 				</div>
 				<div className="postcard__bar"></div>
 				<div className="postcard__preview-txt">{GreenContent}</div>
-        <button type="button" className="btn btn-outline-success">Register</button>
+        {/* <button type="button" className="btn btn-outline-success">Register</button> */}
       </div>
 		</article>
 
