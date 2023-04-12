@@ -3,13 +3,13 @@ import "./style/Eventtimeline.css";
 import fifa from "./img/IMG-20230409-WA0021.avif"
 
 export default function EventTimelineItem(props) {
-    let {BlueTitle,EventDate,BlueTime,BlueContent, RedTitle,RedTime,RedContent,GreenTitle,GreenTime,GreenContent,RedImg,GreenImg,BlueImg,showGreen,key}=props;
+    let {BlueTitle,EventDate,BlueTime,BlueContent, RedTitle,RedTime,RedContent,GreenTitle,GreenTime,GreenContent,RedImg,GreenImg,BlueImg,showGreen,showBlue,showRed,key}=props;
 	{console.log(BlueImg,GreenImg,RedImg)}
   return (
     <div>
       <div className="container blur_background">
     <div className="h1 text-center text-dark" id='subHeading'>{EventDate}</div>
-		<article className="postcard light blue">
+		<article className="postcard light blue" style={{display:showBlue}}>
 				<img className="postcard__img" src={BlueImg} alt="" />
 
 			<div className="postcard__text t-dark">
@@ -24,7 +24,7 @@ export default function EventTimelineItem(props) {
 			  {/* <button type="button" className="btn btn-outline-primary">Register</button> */}
 			</div>
 		</article>
-		<article className="postcard light red">
+		<article className="postcard light red" style={{display:showRed}}>
 				<img className="postcard__img" src={RedImg} alt="" />	
 			<div className="postcard__text t-dark">
 				<h1 className="postcard__title red">{RedTitle}</h1>

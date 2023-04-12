@@ -38,8 +38,8 @@ export default function Eventtimeline() {
     "timeRed":"Fri, April 14th 2023",
      "contentRed":"UPES-CSI proudly presents the perfect opportunity for photography enthusiasts to showcase their skills and explore new perspectives with Clickathon 4.0.",
     "titleGreen":"Human-Foosball",
+    "showGreen":"none",
     "timeGreen":"Fri, April 14th 2023",
-    "showGreen":"flex",
      "contentGreen":"Gather your squad and all foosball fans for a thrilling game of Human-Foosball. With restricted moves, show up your skills and win. c",
   },{
     "eventDate":"15 April",
@@ -47,6 +47,7 @@ export default function Eventtimeline() {
     "imgGreen":Capitalist,
     "key":3,
     "imgBlue":Art,
+    "showBlue":"none",
     "titleBlue":"Art Across Time",
     "timeBlue":"Sat, April 15th 2023",
      "contentBlue":'Get ready to travel across the world with our upcoming UPES-CSI event, "Art Across Time". ',
@@ -68,7 +69,7 @@ export default function Eventtimeline() {
       return     <EventTimelineItem BlueTitle={element.titleBlue} EventDate={element.eventDate} BlueTime={element.timeBlue} BlueContent={element.contentBlue} 
       RedTitle={element.titleRed} RedTime={element.timeRed} RedContent={element.contentRed} 
       GreenTitle={element.titleGreen} GreenTime={element.timeGreen} GreenContent={element.contentGreen} BlueImg={element.imgBlue} RedImg={element.imgRed} GreenImg={element.imgGreen}
-      showGreen={element.showGreen} key={element.key}
+      showGreen={element.showGreen} key={element.key} showBlue={element.showBlue}
       />
     })}
 	</div>
